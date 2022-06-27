@@ -1,0 +1,133 @@
+/* all */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* elements */
+
+body {
+    text-align: center;
+    background-image: url('assets/images/tile.jpg');
+    font-size: medium;
+    font-family: 'Architects Daughter', cursive;
+}
+
+form {
+    width: 100%;
+}
+
+div {
+    direction: ltr;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    position: relative;
+
+}
+
+p {
+    direction: ltr;
+    height: 20px;
+    margin-top: 10px;
+    position: absolute;
+    float: left;
+
+}
+
+button, input {
+    cursor: pointer;
+}
+
+input {
+    border-radius: 5px;
+    height: 38px;
+    width: 120px;
+}
+
+h1 {
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* id  */
+
+#notesBody {
+    width: 100%;
+    margin: auto;
+}
+
+#textBox {
+    background-image: url('assets/images/formbg.jpg');
+    padding: 40px 25px 25px 25px;
+    width: 400px;
+    margin: 10px 10px;
+    height: 200px;
+    direction: ltr;
+    border-radius: 5px;
+    line-height: 2em;
+}
+
+/* classes */
+
+.note {
+    background-image: url('assets/images/notebg.png') !important;
+    background-repeat: no-repeat;
+    height: 230px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.animationNote {
+    animation: fadein 2s;
+}
+
+.bckt {
+    white-space: pre-wrap;
+    max-width: 140px;
+    height: 130px;
+    margin-top: 20px;
+    position: absolute;
+    word-break: break-all;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+
+}
+
+.bck {
+    position: relative;
+    display: flex;
+    margin-top: 160px;
+    float: left;
+    margin-right: auto;
+}
+
+.btnExit {
+    position: absolute;
+    margin-left: 60px;
+    right: 12%;
+    top: 10%;
+
+}
+
+.note:hover>.btnExit *,
+.note:hover {
+    fill: #0d0c0c;
+}
+
+/* animation  */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
